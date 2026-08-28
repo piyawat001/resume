@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+*.tsbuildinfo
+extracted/
+*.zip
+CLAUDE_RESUME_PROMPT.md
+RESUME_INET_PROJECTS.md
