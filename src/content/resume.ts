@@ -138,6 +138,7 @@ export const resume: Record<Lang, Resume> = {
           'พัฒนา Server-side pagination และ Filtering สำหรับรายการผลิตภัณฑ์ พื้นที่ สมาชิก และรายงาน พร้อมจัดทำ Postman collection เพื่อทดสอบ',
           'พัฒนา Logic ด้าน Authentication, Role และ Permission รวมถึงสิทธิ์ผู้ดูแลระดับองค์กร การมองเห็นข้อมูลตามบทบาท (SQA / non-SQA) และการเชื่อมต่อ OneID',
           'พัฒนาหน้าจอ Frontend และการเชื่อมต่อ API ด้วย React, Angular และ Vue.js สำหรับระบบแจ้งเตือน Dashboard รายการรายงาน การ Preview/Download เอกสาร และการตั้งค่าสิทธิ์',
+          'ช่วงเริ่มงานปี 2024 พัฒนา WordPress/WooCommerce payment gateway plugin สำหรับเชื่อมต่อระบบชำระเงิน New Cashier ด้วย PHP และ JWT',
         ],
       },
     ],
@@ -191,8 +192,8 @@ export const resume: Record<Lang, Resume> = {
         tech: ['Node.js', 'Express.js', 'JavaScript', 'HTML Template', 'PDF Generation', 'Excel Import/Export', 'MongoDB/Mongoose', 'One Box Integration', 'Docker', 'GitLab CI'],
       },
       {
-        title: 'New Cashier Payment Gateway — WordPress/WooCommerce Plugin',
-        period: '2024',
+        title: 'New Cashier Payment Gateway — WordPress/WooCommerce Plugin (Early Work)',
+        period: 'ช่วงเริ่มงาน 2024',
         summary: 'ปลั๊กอินชำระเงินสำหรับ WordPress/WooCommerce ใช้เชื่อมต่อระบบ New Cashier เพื่อส่งผู้ใช้จากหน้า checkout ไปยังระบบชำระเงินและรับผล callback กลับมาอัปเดตคำสั่งซื้อ',
         bullets: [
           'พัฒนา WooCommerce payment gateway plugin ด้วย PHP พร้อมหน้าตั้งค่า enable/disable, test mode, debug mode, title, description และ merchant key',
@@ -283,6 +284,7 @@ export const resume: Record<Lang, Resume> = {
           'Implemented server-side pagination and filtering for product, area, member, and report lists, with Postman collections for verification.',
           'Developed authentication, role, and permission logic, including organization-level admin rights, SQA / non-SQA data visibility rules, and OneID integration.',
           'Delivered frontend screens and API integrations in React, Angular, and Vue.js for notifications, dashboards, report lists, report preview/download, and permission settings.',
+          'In early 2024, developed a WordPress/WooCommerce payment gateway plugin for New Cashier integration using PHP and JWT.',
         ],
       },
     ],
@@ -336,8 +338,8 @@ export const resume: Record<Lang, Resume> = {
         tech: ['Node.js', 'Express.js', 'JavaScript', 'HTML templates', 'PDF generation', 'Excel import/export', 'MongoDB/Mongoose', 'One Box integration', 'Docker', 'GitLab CI'],
       },
       {
-        title: 'New Cashier Payment Gateway — WordPress/WooCommerce Plugin',
-        period: '2024',
+        title: 'New Cashier Payment Gateway — WordPress/WooCommerce Plugin (Early Work)',
+        period: 'Early 2024',
         summary: 'A WordPress/WooCommerce payment gateway plugin for integrating New Cashier checkout, redirecting customers to payment, receiving callbacks, and updating WooCommerce order status.',
         bullets: [
           'Developed a WooCommerce payment gateway plugin in PHP with admin settings for enable/disable, test mode, debug mode, title, description, and merchant key.',
