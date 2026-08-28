@@ -120,10 +120,6 @@ export const resume: Record<Lang, Resume> = {
         label: 'DevOps & Tools',
         items: ['Docker', 'Docker Compose', 'GitLab CI/CD', 'Nginx', 'Git', 'GitLab', 'Postman/Bruno', 'Swagger/API Documentation'],
       },
-      {
-        label: 'Domain & Integration',
-        items: ['Carbon Footprint Reporting', 'Emission Factor Management', 'Evaluation Workflow', 'Approval/Rejection Flow', 'OneID / One Box Integration', 'การจัดรูปแบบวันที่และเอกสารภาษาไทย'],
-      },
     ],
     experience: [
       {
@@ -240,10 +236,6 @@ export const resume: Record<Lang, Resume> = {
       {
         label: 'DevOps & Tools',
         items: ['Docker', 'Docker Compose', 'GitLab CI/CD', 'Nginx', 'Git', 'GitLab', 'Postman/Bruno', 'Swagger/API Documentation'],
-      },
-      {
-        label: 'Domain & Integration',
-        items: ['Carbon Footprint Reporting', 'Emission Factor Management', 'Evaluation Workflow', 'Approval/Rejection Flow', 'OneID / One Box Integration', 'Thai Date & Document Formatting'],
       },
     ],
     experience: [
