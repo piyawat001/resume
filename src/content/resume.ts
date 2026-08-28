@@ -17,7 +17,6 @@ export type Resume = {
     email: string;
     github: string;
     gitlab: string;
-    age: string;
   };
   labels: {
     summary: string;
@@ -92,7 +91,6 @@ export const resume: Record<Lang, Resume> = {
       email: 'piyawatmot@gmail.com',
       github: 'github.com/piyawat001',
       gitlab: 'gitlab.com/piyawat001',
-      age: 'อายุ 28 ปี',
     },
     labels: {
       summary: 'สรุปโดยย่อ',
@@ -259,7 +257,6 @@ export const resume: Record<Lang, Resume> = {
       email: 'piyawatmot@gmail.com',
       github: 'github.com/piyawat001',
       gitlab: 'gitlab.com/piyawat001',
-      age: 'Age 28',
     },
     labels: {
       summary: 'Professional Summary',

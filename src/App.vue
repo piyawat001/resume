@@ -58,7 +58,6 @@ onMounted(() => {
           <a :href="`mailto:${data.contact.email}`">{{ data.contact.email }}</a>
           <a href="https://github.com/piyawat001" rel="noreferrer">{{ data.contact.github }}</a>
           <a href="https://gitlab.com/piyawat001" rel="noreferrer">{{ data.contact.gitlab }}</a>
-          <span>{{ data.contact.age }}</span>
         </address>
       </header>
 
