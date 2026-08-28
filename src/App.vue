@@ -1,11 +1,16 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue';
-import { resume, type Lang } from './content/resume';
+import { resume, type Lang, type Project } from './content/resume';
 
 const storedLang = window.localStorage.getItem('resume-lang');
 const lang = ref<Lang>(storedLang === 'en' || storedLang === 'th' ? storedLang : 'th');
 const data = computed(() => resume[lang.value]);
 const nextLang = computed<Lang>(() => (lang.value === 'th' ? 'en' : 'th'));
+const selectedProjects = computed<Project[]>(() => [
+  ...data.value.projects,
+  ...data.value.freelanceProjects,
+  ...data.value.academicProjects,
+]);
 
 function toggleLang() {
   lang.value = nextLang.value;
@@ -89,46 +94,10 @@ onMounted(() => {
 
       <section class="section">
         <div class="section-heading">
-          <h2>{{ data.labels.freelance }}</h2>
-          <span>{{ data.labels.freelanceNote }}</span>
-        </div>
-        <article v-for="project in data.freelanceProjects" :key="project.title" class="project">
-          <div class="row-heading">
-            <h3>{{ project.title }}</h3>
-            <span>{{ project.period }}</span>
-          </div>
-          <p>{{ project.summary }}</p>
-          <ul>
-            <li v-for="bullet in project.bullets" :key="bullet">{{ bullet }}</li>
-          </ul>
-          <p class="tech"><strong>{{ data.labels.tech }}</strong> {{ project.tech.join(' · ') }}</p>
-        </article>
-      </section>
-
-      <section class="section">
-        <div class="section-heading">
           <h2>{{ data.labels.projects }}</h2>
           <span>{{ data.labels.projectsNote }}</span>
         </div>
-        <article v-for="project in data.projects" :key="project.title" class="project">
-          <div class="row-heading">
-            <h3>{{ project.title }}</h3>
-            <span>{{ project.period }}</span>
-          </div>
-          <p>{{ project.summary }}</p>
-          <ul>
-            <li v-for="bullet in project.bullets" :key="bullet">{{ bullet }}</li>
-          </ul>
-          <p class="tech"><strong>{{ data.labels.tech }}</strong> {{ project.tech.join(' · ') }}</p>
-        </article>
-      </section>
-
-      <section class="section">
-        <div class="section-heading">
-          <h2>{{ data.labels.academic }}</h2>
-          <span>{{ data.labels.academicNote }}</span>
-        </div>
-        <article v-for="project in data.academicProjects" :key="project.title" class="project">
+        <article v-for="project in selectedProjects" :key="project.title" class="project">
           <div class="row-heading">
             <h3>{{ project.title }}</h3>
             <span>{{ project.period }}</span>

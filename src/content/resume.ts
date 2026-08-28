@@ -101,7 +101,7 @@ export const resume: Record<Lang, Resume> = {
       freelance: 'งานนอก / ก่อนเข้า INET',
       freelanceNote: 'AI dental project',
       projects: 'ผลงานที่เลือกนำเสนอ',
-      projectsNote: 'โปรเจกต์ภายในองค์กร ไม่เปิดเผยลิงก์',
+      projectsNote: 'เรียงจากใหม่ไปเก่า รวมงานบริษัท งานนอก และโปรเจกต์จบ',
       academic: 'โปรเจกต์จบ',
       academicNote: 'Senior project',
       personal: 'โปรเจกต์ส่วนตัว',
@@ -231,7 +231,7 @@ export const resume: Record<Lang, Resume> = {
     academicProjects: [
       {
         title: 'Intelligent Sidewalk Surveillance & Motorcycle License Plate Spotter',
-        period: 'Senior Project',
+        period: '2024 (โปรเจกต์จบ)',
         summary: 'ระบบเฝ้าระวังการขับขี่รถจักรยานยนต์บนทางเท้าและตรวจจับป้ายทะเบียน ใช้ประมวลผลภาพเพื่อตรวจจับรถจักรยานยนต์ พื้นที่ทางเท้า และข้อมูลป้ายทะเบียนสำหรับงานควบคุมและบังคับใช้กฎจราจร',
         bullets: [
           'พัฒนาระบบตรวจจับด้วย YOLOv8 และ OpenCV สำหรับวิเคราะห์ภาพและตรวจจับเหตุการณ์รถจักรยานยนต์ที่ขับขี่บนทางเท้า',
@@ -246,7 +246,7 @@ export const resume: Record<Lang, Resume> = {
     education: {
       degree: 'วิทยาศาสตรบัณฑิต (วิทยาการคอมพิวเตอร์)',
       school: 'วิทยาลัยการคอมพิวเตอร์ มหาวิทยาลัยขอนแก่น',
-      detail: 'สำเร็จการศึกษา พ.ศ. 2567 (พฤษภาคม 2024) · GPAX 2.90 · ผ่านการทดสอบ KKU English Proficiency Test (2022)',
+      detail: 'สำเร็จการศึกษา พ.ศ. 2567 (พฤษภาคม 2024) · GPAX 2.90',
       year: '2024',
     },
   },
@@ -268,7 +268,7 @@ export const resume: Record<Lang, Resume> = {
       freelance: 'Freelance / Pre-INET Project',
       freelanceNote: 'AI dental project',
       projects: 'Selected Projects',
-      projectsNote: 'Internal company projects - URLs not disclosed.',
+      projectsNote: 'Newest to oldest, including company, freelance, and graduation projects.',
       academic: 'Graduation Project',
       academicNote: 'Senior project',
       personal: 'Personal Projects',
@@ -398,7 +398,7 @@ export const resume: Record<Lang, Resume> = {
     academicProjects: [
       {
         title: 'Intelligent Sidewalk Surveillance & Motorcycle License Plate Spotter',
-        period: 'Senior Project',
+        period: '2024 (Senior Project)',
         summary: 'An intelligent sidewalk surveillance system for monitoring motorcycles riding on sidewalks and spotting motorcycle license plates for traffic control and enforcement workflows.',
         bullets: [
           'Built image-processing and detection workflows with YOLOv8 and OpenCV to identify motorcycles and sidewalk-riding events.',
@@ -413,7 +413,7 @@ export const resume: Record<Lang, Resume> = {
     education: {
       degree: 'Bachelor of Science (Computer Science)',
       school: 'College of Computing, Khon Kaen University',
-      detail: 'Graduated May 2024 · GPAX 2.90 · KKU English Proficiency Test (completed 2022)',
+      detail: 'Graduated May 2024 · GPAX 2.90',
       year: '2024',
     },
   },
