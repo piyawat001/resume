@@ -111,7 +111,7 @@ export const resume: Record<Lang, Resume> = {
     skills: [
       {
         label: 'Backend',
-        items: ['Go', 'Node.js', 'Express.js', 'Python (script สร้างเอกสาร)', 'REST API', 'Authentication/Login', 'Role & Permission Logic', 'Report Generation', 'Export PDF/DOCX/PPTX/Excel'],
+        items: ['Go', 'Node.js', 'Express.js', 'PHP', 'Python (script สร้างเอกสาร)', 'REST API', 'Authentication/Login', 'Role & Permission Logic', 'JWT', 'WordPress/WooCommerce Plugin', 'Report Generation', 'Export PDF/DOCX/PPTX/Excel'],
       },
       {
         label: 'Frontend',
@@ -190,6 +190,18 @@ export const resume: Record<Lang, Resume> = {
         ],
         tech: ['Node.js', 'Express.js', 'JavaScript', 'HTML Template', 'PDF Generation', 'Excel Import/Export', 'MongoDB/Mongoose', 'One Box Integration', 'Docker', 'GitLab CI'],
       },
+      {
+        title: 'New Cashier Payment Gateway — WordPress/WooCommerce Plugin',
+        period: '2024',
+        summary: 'ปลั๊กอินชำระเงินสำหรับ WordPress/WooCommerce ใช้เชื่อมต่อระบบ New Cashier เพื่อส่งผู้ใช้จากหน้า checkout ไปยังระบบชำระเงินและรับผล callback กลับมาอัปเดตคำสั่งซื้อ',
+        bullets: [
+          'พัฒนา WooCommerce payment gateway plugin ด้วย PHP พร้อมหน้าตั้งค่า enable/disable, test mode, debug mode, title, description และ merchant key',
+          'สร้าง JWT payload จากข้อมูลคำสั่งซื้อและข้อมูลลูกค้า แล้ว redirect ผู้ใช้ไปยัง New Cashier checkout ตามโหมดทดสอบหรือใช้งานจริง',
+          'พัฒนา callback endpoint สำหรับรับผลการชำระเงิน ตรวจข้อมูล response และอัปเดตสถานะ order เป็นสำเร็จ ล้มเหลว หรือรอตรวจสอบตาม response code',
+          'เพิ่ม debug logging ผ่าน WooCommerce logger และไฟล์ log รายวันสำหรับช่วยตรวจสอบ payment flow',
+        ],
+        tech: ['PHP', 'WordPress', 'WooCommerce', 'Payment Gateway Plugin', 'JWT', 'Callback API', 'Composer'],
+      },
     ],
     academicProjects: [
       {
@@ -244,7 +256,7 @@ export const resume: Record<Lang, Resume> = {
     skills: [
       {
         label: 'Backend',
-        items: ['Go', 'Node.js', 'Express.js', 'Python (document scripts)', 'REST API', 'Authentication/Login', 'Role & Permission Logic', 'Report Generation', 'PDF/DOCX/PPTX/Excel Export'],
+        items: ['Go', 'Node.js', 'Express.js', 'PHP', 'Python (document scripts)', 'REST API', 'Authentication/Login', 'Role & Permission Logic', 'JWT', 'WordPress/WooCommerce Plugin', 'Report Generation', 'PDF/DOCX/PPTX/Excel Export'],
       },
       {
         label: 'Frontend',
@@ -322,6 +334,18 @@ export const resume: Record<Lang, Resume> = {
           'Added import/export and validation improvements: Excel import validation, intern/professor import handling, PNG/JPG/JPEG/PDF file type validation, and Excel export.',
         ],
         tech: ['Node.js', 'Express.js', 'JavaScript', 'HTML templates', 'PDF generation', 'Excel import/export', 'MongoDB/Mongoose', 'One Box integration', 'Docker', 'GitLab CI'],
+      },
+      {
+        title: 'New Cashier Payment Gateway — WordPress/WooCommerce Plugin',
+        period: '2024',
+        summary: 'A WordPress/WooCommerce payment gateway plugin for integrating New Cashier checkout, redirecting customers to payment, receiving callbacks, and updating WooCommerce order status.',
+        bullets: [
+          'Developed a WooCommerce payment gateway plugin in PHP with admin settings for enable/disable, test mode, debug mode, title, description, and merchant key.',
+          'Created JWT payloads from order and customer data, then redirected users to New Cashier checkout based on sandbox or production mode.',
+          'Built a callback endpoint to receive payment responses, validate response data, and update orders as paid, failed, or on-hold based on response code.',
+          'Added debug logging through WooCommerce logger and daily log files to support payment flow troubleshooting.',
+        ],
+        tech: ['PHP', 'WordPress', 'WooCommerce', 'Payment Gateway Plugin', 'JWT', 'Callback API', 'Composer'],
       },
     ],
     academicProjects: [
