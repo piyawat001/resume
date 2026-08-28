@@ -125,7 +125,7 @@ export const resume: Record<Lang, Resume> = {
       {
         role: 'Software Developer',
         company: 'บริษัท อินเทอร์เน็ตประเทศไทย จำกัด (มหาชน) (INET)',
-        period: '2025 - 2026',
+        period: 'พ.ค. 2024 - ปัจจุบัน',
         bullets: [
           'พัฒนาและดูแล REST API สำหรับระบบรายงาน ข้อมูล Dashboard การจัดการองค์กร/สมาชิก แบบประเมิน สถานะคะแนน Workflow อนุมัติ-ปฏิเสธ และการส่งออกไฟล์',
           'พัฒนาระบบสร้างเอกสารและรายงานอัตโนมัติในรูปแบบ PDF, DOCX, PPTX และ Excel ด้วย Go, Node.js และ Python script รวมถึงการแทนค่า placeholder การฝังรูปภาพ และการจัดรูปแบบตาราง/หัวท้ายเอกสาร',
@@ -242,7 +242,7 @@ export const resume: Record<Lang, Resume> = {
       {
         role: 'Software Developer',
         company: 'Internet Thailand Public Company Limited (INET)',
-        period: '2025 - 2026',
+        period: 'May 2024 - Present',
         bullets: [
           'Built and maintained REST APIs for reporting, dashboard data, organization and member management, evaluation forms, score state workflows, approval/rejection flows, and file export features.',
           'Developed automated document and report generation in PDF, DOCX, PPTX, and Excel using Go, Node.js, and Python scripts, including placeholder replacement, image embedding, and table/header-footer formatting.',
