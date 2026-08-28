@@ -23,6 +23,8 @@ export type Resume = {
     summary: string;
     skills: string;
     experience: string;
+    freelance: string;
+    freelanceNote: string;
     projects: string;
     projectsNote: string;
     academic: string;
@@ -37,6 +39,7 @@ export type Resume = {
   summary: string;
   skills: { label: string; items: string[] }[];
   experience: { role: string; company: string; period: string; bullets: string[] }[];
+  freelanceProjects: Project[];
   projects: Project[];
   academicProjects: Project[];
   personalProjects: { title: string; summary: string; url: string }[];
@@ -95,6 +98,8 @@ export const resume: Record<Lang, Resume> = {
       summary: 'สรุปโดยย่อ',
       skills: 'ทักษะทางเทคนิค',
       experience: 'ประสบการณ์ทำงาน',
+      freelance: 'งานนอก / ก่อนเข้า INET',
+      freelanceNote: 'AI dental project',
       projects: 'ผลงานที่เลือกนำเสนอ',
       projectsNote: 'โปรเจกต์ภายในองค์กร ไม่เปิดเผยลิงก์',
       academic: 'โปรเจกต์จบ',
@@ -116,6 +121,10 @@ export const resume: Record<Lang, Resume> = {
       {
         label: 'Frontend',
         items: ['React', 'Angular', 'Vue.js', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'API Integration', 'Pagination', 'Filtering', 'PDF Preview/Download UI'],
+      },
+      {
+        label: 'AI & Computer Vision',
+        items: ['YOLOv8', 'OpenCV', 'Image Processing', 'Classification Model Training', 'Inception', 'VGG', 'ResNet', 'RegNet', 'Model Comparison', 'ROC/Confusion Matrix'],
       },
       {
         label: 'Database & Data',
@@ -140,6 +149,21 @@ export const resume: Record<Lang, Resume> = {
           'พัฒนาหน้าจอ Frontend และการเชื่อมต่อ API ด้วย React, Angular และ Vue.js สำหรับระบบแจ้งเตือน Dashboard รายการรายงาน การ Preview/Download เอกสาร และการตั้งค่าสิทธิ์',
           'ช่วงเริ่มงานปี 2024 พัฒนา WordPress/WooCommerce payment gateway plugin สำหรับเชื่อมต่อระบบชำระเงิน New Cashier ด้วย PHP และ JWT',
         ],
+      },
+    ],
+    freelanceProjects: [
+      {
+        title: 'AI Dental Diagnosis Platform — Freelance / Pre-INET Project',
+        period: 'ก่อน พ.ค. 2024',
+        summary: 'เว็บแอปพลิเคชัน AI ทันตกรรมสำหรับคณะทันตแพทยศาสตร์ มหาวิทยาลัยขอนแก่น รองรับการอัปโหลดภาพรังสี Panoramic Radiographs (OPG), ประมวลผลด้วย AI service, แสดงผลวินิจฉัย/คะแนนความเชื่อมั่น และให้ผู้ใช้ดูประวัติผลลัพธ์ย้อนหลัง',
+        bullets: [
+          'สร้างและทดลองโมเดล classification เอง โดยเปรียบเทียบสถาปัตยกรรม YOLO, Inception, VGG, ResNet และ RegNet เพื่อเลือกแนวทางที่เหมาะกับการจำแนกภาพทางทันตกรรม',
+          'ใช้ YOLOv8 สำหรับงาน detection/segmentation เพื่อจับบริเวณรอยโรคตามขอบ lesion บนภาพ OPG และส่งผลลัพธ์ให้ระบบเว็บแสดงเปรียบเทียบกับภาพต้นฉบับ',
+          'พัฒนา AI workflow แบบแยก web server และ AI service API server เพื่อแยก business logic ออกจากงานประมวลผล AI ที่ใช้ทรัพยากรสูง',
+          'พัฒนาหน้าผู้ใช้สำหรับ upload/preview ภาพ, consent flow, single/split result view, confidence score, ROC/Confusion Matrix และประวัติการประมวลผล',
+          'พัฒนาฟีเจอร์จัดการระบบ เช่น user approval, package/usage limit, knowledge/FAQ content, expert consultation และ admin dashboard',
+        ],
+        tech: ['YOLOv8', 'OpenCV', 'Python', 'Inception', 'VGG', 'ResNet', 'RegNet', 'Image Classification', 'Detection/Segmentation', 'Vue.js', 'Go', 'REST API'],
       },
     ],
     projects: [
@@ -241,6 +265,8 @@ export const resume: Record<Lang, Resume> = {
       summary: 'Professional Summary',
       skills: 'Technical Skills',
       experience: 'Work Experience',
+      freelance: 'Freelance / Pre-INET Project',
+      freelanceNote: 'AI dental project',
       projects: 'Selected Projects',
       projectsNote: 'Internal company projects - URLs not disclosed.',
       academic: 'Graduation Project',
@@ -262,6 +288,10 @@ export const resume: Record<Lang, Resume> = {
       {
         label: 'Frontend',
         items: ['React', 'Angular', 'Vue.js', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'API Integration', 'Pagination', 'Filtering', 'PDF Preview/Download UI'],
+      },
+      {
+        label: 'AI & Computer Vision',
+        items: ['YOLOv8', 'OpenCV', 'Image Processing', 'Classification Model Training', 'Inception', 'VGG', 'ResNet', 'RegNet', 'Model Comparison', 'ROC/Confusion Matrix'],
       },
       {
         label: 'Database & Data',
@@ -286,6 +316,21 @@ export const resume: Record<Lang, Resume> = {
           'Delivered frontend screens and API integrations in React, Angular, and Vue.js for notifications, dashboards, report lists, report preview/download, and permission settings.',
           'In early 2024, developed a WordPress/WooCommerce payment gateway plugin for New Cashier integration using PHP and JWT.',
         ],
+      },
+    ],
+    freelanceProjects: [
+      {
+        title: 'AI Dental Diagnosis Platform — Freelance / Pre-INET Project',
+        period: 'Before May 2024',
+        summary: 'An AI dental web application for the Faculty of Dentistry, Khon Kaen University, supporting Panoramic Radiographs (OPG) upload, AI service processing, diagnosis result display, confidence scores, and historical result review.',
+        bullets: [
+          'Built and experimented with custom classification models, comparing YOLO, Inception, VGG, ResNet, and RegNet architectures for dental image classification.',
+          'Used YOLOv8 for detection/segmentation to identify lesion regions around disease boundaries on OPG images and return processed outputs for web-based comparison.',
+          'Designed an AI workflow with separated web server and AI service API server responsibilities to isolate business logic from resource-heavy AI processing.',
+          'Developed user workflows for image upload/preview, consent, single/split result views, confidence scores, ROC/Confusion Matrix display, and processing history.',
+          'Built system management features including user approval, package/usage limits, knowledge/FAQ content, expert consultation, and admin dashboard screens.',
+        ],
+        tech: ['YOLOv8', 'OpenCV', 'Python', 'Inception', 'VGG', 'ResNet', 'RegNet', 'Image Classification', 'Detection/Segmentation', 'Vue.js', 'Go', 'REST API'],
       },
     ],
     projects: [
