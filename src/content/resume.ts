@@ -137,7 +137,7 @@ export const resume: Record<Lang, Resume> = {
       {
         role: 'Software Developer',
         company: 'บริษัท อินเทอร์เน็ตประเทศไทย จำกัด (มหาชน) (INET)',
-        period: 'พ.ค. 2024 - ปัจจุบัน',
+        period: 'พ.ค. 2567 - ปัจจุบัน',
         bullets: [
           'พัฒนาและดูแล REST API สำหรับระบบรายงาน ข้อมูล Dashboard การจัดการองค์กร/สมาชิก แบบประเมิน สถานะคะแนน Workflow อนุมัติ-ปฏิเสธ และการส่งออกไฟล์',
           'พัฒนาระบบสร้างเอกสารและรายงานอัตโนมัติในรูปแบบ PDF, DOCX, PPTX และ Excel ด้วย Go, Node.js และ Python script รวมถึงการแทนค่า placeholder การฝังรูปภาพ และการจัดรูปแบบตาราง/หัวท้ายเอกสาร',
@@ -145,14 +145,14 @@ export const resume: Record<Lang, Resume> = {
           'พัฒนา Server-side pagination และ Filtering สำหรับรายการผลิตภัณฑ์ พื้นที่ สมาชิก และรายงาน พร้อมจัดทำ Postman collection เพื่อทดสอบ',
           'พัฒนา Logic ด้าน Authentication, Role และ Permission รวมถึงสิทธิ์ผู้ดูแลระดับองค์กร การมองเห็นข้อมูลตามบทบาท (SQA / non-SQA) และการเชื่อมต่อ OneID',
           'พัฒนาหน้าจอ Frontend และการเชื่อมต่อ API ด้วย React, Angular และ Vue.js สำหรับระบบแจ้งเตือน Dashboard รายการรายงาน การ Preview/Download เอกสาร และการตั้งค่าสิทธิ์',
-          'ช่วงเริ่มงานปี 2024 พัฒนา WordPress/WooCommerce payment gateway plugin สำหรับเชื่อมต่อระบบชำระเงิน New Cashier ด้วย PHP และ JWT',
+          'ช่วงเริ่มงานปี พ.ศ. 2567 พัฒนา WordPress/WooCommerce payment gateway plugin สำหรับเชื่อมต่อระบบชำระเงิน New Cashier ด้วย PHP และ JWT',
         ],
       },
     ],
     freelanceProjects: [
       {
         title: 'AI Dental Diagnosis Platform — Freelance / Pre-INET Project',
-        period: 'ก่อน พ.ค. 2024',
+        period: 'ก่อน พ.ค. 2567',
         summary: 'เว็บแอปพลิเคชัน AI ทันตกรรมสำหรับคณะทันตแพทยศาสตร์ มหาวิทยาลัยขอนแก่น รองรับการอัปโหลดภาพรังสี Panoramic Radiographs (OPG), ประมวลผลด้วย AI service, แสดงผลวินิจฉัย/คะแนนความเชื่อมั่น และให้ผู้ใช้ดูประวัติผลลัพธ์ย้อนหลัง',
         bullets: [
           'สร้างและทดลองโมเดล classification เอง โดยเปรียบเทียบสถาปัตยกรรม YOLO, Inception, VGG, ResNet และ RegNet เพื่อเลือกแนวทางที่เหมาะกับการจำแนกภาพทางทันตกรรม',
@@ -167,7 +167,7 @@ export const resume: Record<Lang, Resume> = {
     projects: [
       {
         title: 'Carbon Footprint of Products (CFP) — Backend & Frontend',
-        period: 'มิ.ย. 2026 - ส.ค. 2026',
+        period: 'มิ.ย. 2569 - ส.ค. 2569',
         summary: 'ระบบจัดการคาร์บอนฟุตพริ้นท์ของผลิตภัณฑ์ ใช้บันทึกข้อมูลผลิตภัณฑ์ องค์กร ข้อมูลรอบชีวิตผลิตภัณฑ์ นำเข้าข้อมูลปีฐาน คำนวณและจัดทำรายงาน CFP พร้อม preview/download เอกสาร',
         bullets: [
           'พัฒนา API จัดการผลิตภัณฑ์และรายงาน รวมถึง product filter ฝั่งเซิร์ฟเวอร์ การเปลี่ยน scope ของรายงาน/ผลิตภัณฑ์ soft delete รายงาน สิทธิ์ผู้ดูแลระดับองค์กร และโควตาจำนวนผลิตภัณฑ์ต่อองค์กร',
@@ -179,7 +179,7 @@ export const resume: Record<Lang, Resume> = {
       },
       {
         title: 'Carbon Footprint for Organization (CFO) — Backend & Frontend',
-        period: 'ม.ค. 2026 - ก.ค. 2026',
+        period: 'ม.ค. 2569 - ก.ค. 2569',
         summary: 'ระบบจัดการคาร์บอนฟุตพริ้นท์ระดับองค์กร ใช้บันทึกและจัดการข้อมูลการปล่อยก๊าซเรือนกระจกของ องค์กร/โรงงาน แยกตาม facility, emission source, scope และ activity group พร้อม Dashboard และรายงานมาตรฐาน ISO/TGO',
         bullets: [
           'พัฒนาระบบแจ้งเตือนการปิดปรับปรุงระบบทั้ง Backend และ Frontend ได้แก่ API แจ้งเตือนล่าสุด การจัดการสถานะปิด การตรวจสอบประกาศย้อนหลัง การแจ้งเตือนแบบเรียลไทม์ Notification panel, Login modal และหน้าจอผู้ดูแล',
@@ -191,7 +191,7 @@ export const resume: Record<Lang, Resume> = {
       },
       {
         title: 'CSAT 2.0 — Survey Backend & Report Service',
-        period: 'พ.ย. 2025 - ม.ค. 2026',
+        period: 'พ.ย. 2568 - ม.ค. 2569',
         summary: 'ระบบสำรวจความพึงพอใจของลูกค้า ใช้สร้างและจัดการแบบประเมิน เก็บคะแนน รองรับ workflow การขอปรับสถานะโดย SQA และส่งออกผลประเมินเป็นรายงาน Excel',
         bullets: [
           'พัฒนา API คะแนนประเมินครบวงจร ทั้งรายการ รายละเอียด รายละเอียดแบบกลุ่ม การแก้ไขรายตัวและแบบกลุ่ม การยกเลิก และ workflow อนุมัติ-ปฏิเสธโดย SQA',
@@ -203,7 +203,7 @@ export const resume: Record<Lang, Resume> = {
       },
       {
         title: 'Intern Evaluation Platform — Backend',
-        period: 'ก.พ. 2025 - ต.ค. 2025',
+        period: 'ก.พ. 2568 - ต.ค. 2568',
         summary: 'ระบบประเมินแพทย์เพิ่มพูนทักษะ/นักศึกษาแพทย์ ใช้จัดการตารางฝึกงาน แบบประเมินหลายประเภท การมอบหมายผู้ประเมิน การส่งคำร้อง การอนุมัติ/ปฏิเสธ การคำนวณผล และการสร้างเอกสาร PDF ของแบบฟอร์มประเมิน',
         bullets: [
           'พัฒนา API สำหรับ workflow การประเมิน ได้แก่ Dashboard และรายการของอาจารย์ รายละเอียดตารางฝึกงาน การคำนวณเปอร์เซ็นต์การลา และการส่ง-อนุมัติ-ปฏิเสธคำร้องของนักศึกษา',
@@ -215,7 +215,7 @@ export const resume: Record<Lang, Resume> = {
       },
       {
         title: 'New Cashier Payment Gateway — WordPress/WooCommerce Plugin (Early Work)',
-        period: 'ช่วงเริ่มงาน 2024',
+        period: 'ช่วงเริ่มงาน 2567',
         summary: 'ปลั๊กอินชำระเงินสำหรับ WordPress/WooCommerce ใช้เชื่อมต่อระบบ New Cashier เพื่อส่งผู้ใช้จากหน้า checkout ไปยังระบบชำระเงินและรับผล callback กลับมาอัปเดตคำสั่งซื้อ',
         bullets: [
           'พัฒนา WooCommerce payment gateway plugin ด้วย PHP พร้อมหน้าตั้งค่า enable/disable, test mode, debug mode, title, description และ merchant key',
@@ -229,7 +229,7 @@ export const resume: Record<Lang, Resume> = {
     academicProjects: [
       {
         title: 'Intelligent Sidewalk Surveillance & Motorcycle License Plate Spotter',
-        period: '2024 (โปรเจกต์จบ)',
+        period: '2567 (โปรเจกต์จบ)',
         summary: 'ระบบเฝ้าระวังการขับขี่รถจักรยานยนต์บนทางเท้าและตรวจจับป้ายทะเบียน ใช้ประมวลผลภาพเพื่อตรวจจับรถจักรยานยนต์ พื้นที่ทางเท้า และข้อมูลป้ายทะเบียนสำหรับงานควบคุมและบังคับใช้กฎจราจร',
         bullets: [
           'พัฒนาระบบตรวจจับด้วย YOLOv8 และ OpenCV สำหรับวิเคราะห์ภาพและตรวจจับเหตุการณ์รถจักรยานยนต์ที่ขับขี่บนทางเท้า',
@@ -244,8 +244,8 @@ export const resume: Record<Lang, Resume> = {
     education: {
       degree: 'วิทยาศาสตรบัณฑิต (วิทยาการคอมพิวเตอร์)',
       school: 'วิทยาลัยการคอมพิวเตอร์ มหาวิทยาลัยขอนแก่น',
-      detail: 'สำเร็จการศึกษา พ.ศ. 2567 (พฤษภาคม 2024) · GPAX 2.90',
-      year: '2024',
+      detail: 'สำเร็จการศึกษา พ.ศ. 2567 (พฤษภาคม 2567) · GPAX 2.90',
+      year: '2567',
     },
   },
   en: {
