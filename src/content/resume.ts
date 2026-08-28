@@ -25,6 +25,8 @@ export type Resume = {
     experience: string;
     projects: string;
     projectsNote: string;
+    academic: string;
+    academicNote: string;
     personal: string;
     personalNote: string;
     education: string;
@@ -36,6 +38,7 @@ export type Resume = {
   skills: { label: string; items: string[] }[];
   experience: { role: string; company: string; period: string; bullets: string[] }[];
   projects: Project[];
+  academicProjects: Project[];
   personalProjects: { title: string; summary: string; url: string }[];
   education: { degree: string; school: string; detail: string; year: string };
 };
@@ -94,6 +97,8 @@ export const resume: Record<Lang, Resume> = {
       experience: 'ประสบการณ์ทำงาน',
       projects: 'ผลงานที่เลือกนำเสนอ',
       projectsNote: 'โปรเจกต์ภายในองค์กร ไม่เปิดเผยลิงก์',
+      academic: 'โปรเจกต์จบ',
+      academicNote: 'Senior project',
       personal: 'โปรเจกต์ส่วนตัว',
       personalNote: 'ทำเองและ deploy บน Vercel',
       education: 'การศึกษา',
@@ -186,6 +191,20 @@ export const resume: Record<Lang, Resume> = {
         tech: ['Node.js', 'Express.js', 'JavaScript', 'HTML Template', 'PDF Generation', 'Excel Import/Export', 'MongoDB/Mongoose', 'One Box Integration', 'Docker', 'GitLab CI'],
       },
     ],
+    academicProjects: [
+      {
+        title: 'Intelligent Sidewalk Surveillance & Motorcycle License Plate Spotter',
+        period: 'Senior Project',
+        summary: 'ระบบเฝ้าระวังการขับขี่รถจักรยานยนต์บนทางเท้าและตรวจจับป้ายทะเบียน ใช้ประมวลผลภาพเพื่อตรวจจับรถจักรยานยนต์ พื้นที่ทางเท้า และข้อมูลป้ายทะเบียนสำหรับงานควบคุมและบังคับใช้กฎจราจร',
+        bullets: [
+          'พัฒนาระบบตรวจจับด้วย YOLOv8 และ OpenCV สำหรับวิเคราะห์ภาพและตรวจจับเหตุการณ์รถจักรยานยนต์ที่ขับขี่บนทางเท้า',
+          'สร้าง workflow สำหรับตรวจจับป้ายทะเบียนและจัดเก็บข้อมูลประวัติ เช่น วันที่ สถานที่ รูปภาพ และตัวอักษรป้ายทะเบียน',
+          'พัฒนาเว็บแอปสำหรับเรียกดูข้อมูลย้อนหลังและตรวจสอบหลักฐานจากภาพที่ระบบบันทึกไว้',
+          'พัฒนาโปรแกรมกำหนดพื้นที่ตรวจจับ เพื่อให้ผู้ใช้ระบุบริเวณที่ต้องการเฝ้าระวังได้ตามพื้นที่จริง',
+        ],
+        tech: ['YOLOv8', 'OpenCV', 'Python', 'Image Processing', 'License Plate Detection', 'SQLite', 'Web Application'],
+      },
+    ],
     personalProjects: personalProjectsTh,
     education: {
       degree: 'วิทยาศาสตรบัณฑิต (วิทยาการคอมพิวเตอร์)',
@@ -211,6 +230,8 @@ export const resume: Record<Lang, Resume> = {
       experience: 'Work Experience',
       projects: 'Selected Projects',
       projectsNote: 'Internal company projects - URLs not disclosed.',
+      academic: 'Graduation Project',
+      academicNote: 'Senior project',
       personal: 'Personal Projects',
       personalNote: 'Side projects built and deployed on Vercel',
       education: 'Education',
@@ -301,6 +322,20 @@ export const resume: Record<Lang, Resume> = {
           'Added import/export and validation improvements: Excel import validation, intern/professor import handling, PNG/JPG/JPEG/PDF file type validation, and Excel export.',
         ],
         tech: ['Node.js', 'Express.js', 'JavaScript', 'HTML templates', 'PDF generation', 'Excel import/export', 'MongoDB/Mongoose', 'One Box integration', 'Docker', 'GitLab CI'],
+      },
+    ],
+    academicProjects: [
+      {
+        title: 'Intelligent Sidewalk Surveillance & Motorcycle License Plate Spotter',
+        period: 'Senior Project',
+        summary: 'An intelligent sidewalk surveillance system for monitoring motorcycles riding on sidewalks and spotting motorcycle license plates for traffic control and enforcement workflows.',
+        bullets: [
+          'Built image-processing and detection workflows with YOLOv8 and OpenCV to identify motorcycles and sidewalk-riding events.',
+          'Implemented license plate detection and historical data storage for date, location, evidence image, and license plate characters.',
+          'Developed a web application for users to review recorded historical detection data and supporting images.',
+          'Built an area configuration program that lets users define detection zones for the surveillance workflow.',
+        ],
+        tech: ['YOLOv8', 'OpenCV', 'Python', 'Image Processing', 'License Plate Detection', 'SQLite', 'Web Application'],
       },
     ],
     personalProjects: personalProjectsEn,

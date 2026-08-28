@@ -107,6 +107,24 @@ onMounted(() => {
 
       <section class="section">
         <div class="section-heading">
+          <h2>{{ data.labels.academic }}</h2>
+          <span>{{ data.labels.academicNote }}</span>
+        </div>
+        <article v-for="project in data.academicProjects" :key="project.title" class="project">
+          <div class="row-heading">
+            <h3>{{ project.title }}</h3>
+            <span>{{ project.period }}</span>
+          </div>
+          <p>{{ project.summary }}</p>
+          <ul>
+            <li v-for="bullet in project.bullets" :key="bullet">{{ bullet }}</li>
+          </ul>
+          <p class="tech"><strong>{{ data.labels.tech }}</strong> {{ project.tech.join(' · ') }}</p>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
           <h2>{{ data.labels.personal }}</h2>
           <span>{{ data.labels.personalNote }}</span>
         </div>
