@@ -37,9 +37,16 @@ onMounted(() => {
 <template>
   <main class="page-shell">
     <div class="toolbar" data-print-hide>
-      <button class="toolbar-button" type="button" :aria-label="data.labels.language" @click="toggleLang">
-        <span aria-hidden="true">Aa</span>
-        <span>{{ nextLang.toUpperCase() }}</span>
+      <button
+        class="language-toggle"
+        type="button"
+        role="switch"
+        :aria-checked="lang === 'en'"
+        :aria-label="data.labels.language"
+        @click="toggleLang"
+      >
+        <span :class="{ active: lang === 'th' }">TH</span>
+        <span :class="{ active: lang === 'en' }">EN</span>
       </button>
       <button class="icon-button" type="button" :aria-label="data.labels.print" @click="printPage">
         <span aria-hidden="true">Print</span>
