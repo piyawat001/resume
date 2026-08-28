@@ -42,11 +42,6 @@ export type Resume = {
 
 const personalProjectsTh = [
   {
-    title: 'Rent Calculator',
-    summary: 'เว็บแอปเล็ก ๆ ไว้คำนวณค่าเช่าและค่าน้ำค่าไฟรายเดือน ทำไว้ใช้เอง',
-    url: 'https://rent-calculator-wine.vercel.app',
-  },
-  {
     title: 'Translate AI',
     summary: 'เว็บแปลภาษา ต่อกับบริการ AI ผ่าน API',
     url: 'https://translate-ai-mu.vercel.app',
@@ -61,19 +56,9 @@ const personalProjectsTh = [
     summary: 'เครื่องคำนวณค่าชาร์จและค่าใช้จ่ายในการใช้รถ EV',
     url: 'https://ev-calculator-ruddy.vercel.app',
   },
-  {
-    title: 'Bill',
-    summary: 'เว็บแอปไว้บันทึกและหารบิลค่าใช้จ่ายรายเดือน',
-    url: 'https://bill-psi.vercel.app',
-  },
 ];
 
 const personalProjectsEn = [
-  {
-    title: 'Rent Calculator',
-    summary: 'A small web app for working out monthly rent and utility costs, built for my own use',
-    url: 'https://rent-calculator-wine.vercel.app',
-  },
   {
     title: 'Translate AI',
     summary: 'A translation tool on the web, wired up to an AI service through its API',
@@ -88,11 +73,6 @@ const personalProjectsEn = [
     title: 'EV Calculator',
     summary: 'A calculator for EV charging costs and day-to-day running expenses',
     url: 'https://ev-calculator-ruddy.vercel.app',
-  },
-  {
-    title: 'Bill',
-    summary: 'A web app for tracking and splitting monthly bills',
-    url: 'https://bill-psi.vercel.app',
   },
 ];
 
